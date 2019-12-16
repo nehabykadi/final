@@ -22,7 +22,7 @@ for (i = 0; i < close.length; i++) {
 let list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
+    ev.target.classList.toggle('checked'); //function that calls my css code called ul.checked that causes a linethrough
   }
 }, false);
 
