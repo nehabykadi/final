@@ -2,7 +2,7 @@ let myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
   let span = document.createElement("SPAN");
-  let txt = document.createTextNode("\u00D7");
+  let txt = document.createTextNode("\u00D7"); //creates a text character in this case it is a checkmark
   span.className = "close";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
@@ -22,7 +22,7 @@ for (i = 0; i < close.length; i++) {
 let list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
+    ev.target.classList.toggle('checked'); //relates to the css and activates the strikethrough css function
   }
 }, false);
 
